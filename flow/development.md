@@ -46,7 +46,7 @@ GitHub の Issue タブで `New issue` を押下する。
 master ブランチから Issue 用のブランチを作成する。
 
 ```
-git checkout -b issues/<issue番号>-<description>
+git checkout -b issues/<issue番号>-<title>
 ```
 
 ## 4. コードを書いてコミットする
@@ -69,12 +69,12 @@ Long Description(Optional)
 ローカルのブランチをリモートにプッシュする。
 
 ```
-git push origin issues/<Issue番号>-<description>
+git push origin issues/<Issue番号>-<title>
 ```
 
 GitHub でブランチを表示し、`New pull request` を押下してプルリクエストを作成する。
 
-`Title` のフォーマットは `Issue #<Issue番号> <description>` とする。
+`Title` のフォーマットは `Issue #<Issue番号> <title>` とする。
 
 `Comment` には以下の項目を記載すること。
 Issue 上で言及している場合はその旨を記載する。
@@ -119,7 +119,7 @@ Issue 上で言及している場合はその旨を記載する。
 ```
 git add target
 git commit
-git push origin issues/<Issue番号>-<description>
+git push origin issues/<Issue番号>-<title>
 ```
 
 ## 8. レビューが完了すると修正がマージされる
